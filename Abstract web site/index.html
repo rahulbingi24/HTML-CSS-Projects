@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-navbar {
+  background-color: black;
+  height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo {
+  margin-left: 5%;
+  /* padding: 12px; */
+  color: white;
+}
+
+.logo > a { 
+  text-decoration: none;
+  color: white;
+}
+
+.form {
+  margin-right: 5%;
+}
+
+.form-button {
+  height: 30px;
+}
+
+.submit-a-request-button {
+  padding: 5px;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.submit-a-request-button:hover {
+  background-color: rgb(30, 30, 30);
+}
+
+.sign-in-button {
+  margin-left: 10px;
+  padding: 5px;
+  width: 70px;
+  color: white;
+  background-color: rgb(66, 66, 255);
+  border: none;
+  border-radius: 5px;
+
+}
+
+.sign-in-button:hover {
+  background-color: rgb(95, 95, 250);
+}
+
+.header-search {
+  width: 100%;
+  background-color: lightblue;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-search > .text {
+  font-size: 60px;
+
+}
+
+.header-search > .search > input {
+  padding: 10px;
+  width: 550px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main {
+  /* height: 500px; */
+  display: grid;
+  /* flex-wrap: wrap; */
+  padding: 50px;
+  gap: 20px;
+  box-sizing: content-box;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main > .block {
+  height: 100px;
+  width: 400px;
+  /* text-align: justify; */
+}
+
+
+.footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 250px;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.footer > div > h5 {
+  font-weight:normal;
+}
+
+.footer > .order5 {
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 950px) {
+  .main {
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+</style>
+<body>
+    <div class="web">
+        <header>
+            <div class="header-navbar">
+                <h3 class="logo"><a href="#">Abstract</a> | <a href="#">Help Center</a></h3>
+                <h3 class="form"><form action=""><button class="submit-a-request-button form-button">Submit a request</button><button class="sign-in-button form-button">Sign in</button></form></h3>
+            </div>
+            <div class="header-search">
+                <div class="text">How can we help?</div>
+                <div class="search"><input type="search" name="" id="" placeholder="Search"></div>
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="order1 block"> 
+                    <h3>Branches</h3>
+                    <br>
+                    <p>Abstract Branches let you manage, version, and document your designs in one place.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="order2 block">
+                    <h3>Manage your account</h3>
+                    <br>
+                    <p>configure your account settings, such as your email, profile, details, and password.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="order3 block">
+                    <h3>Manage organizations, teams, and projects</h3>
+                    <br>
+                    <p>Use Abstract organizations, teams, and projects to organize your people and your work</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="order4 block">
+                    <h3>Manage billing</h3>
+                    <br>
+                    <p>Change subscriptions and payment details.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="order5 block">
+                    <h3>Authenticate to Abstract</h3>
+                    <br>
+                    <p>Set up and configure SSO, SCIM, and Just-In-Time provisioning.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="order6 block">
+                    <h3>Abstract support</h3>
+                    <br>
+                    <p>Get in touch with a human</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="order1">
+                    <h3>Abstract</h3>
+                    <br>
+                    <h5>Branches</h5>
+                </div>
+                <div class="order2">
+                    <h3>Resources</h3>
+                    <br>
+                    <h5>Blog</h5>
+                    <h5>Help center</h5>
+                    <h5>Release Notes</h5>
+                    <h5>Status</h5>
+                </div>
+                <div class="order3">
+                    <h3>Community</h3>
+                    <br>
+                    <h5>Twitter</h5>
+                    <h5>LinkedIn</h5>
+                    <h5>FaceBook</h5>
+                    <h5>Instagram</h5>
+                    <h5>Youtube</h5>
+                </div>
+                <div class="order4">
+                    <h3>Company</h3>
+                    <br>
+                    <h5>About Us</h5>
+                    <h5>Careers</h5>
+                    <h5>Legal</h5>
+                    <br><br>
+                    <h3>Contact Us</h3>
+                    <h5>info@abstract.com</h5>
+                </div>
+                <div class="order5">    
+                    <h5>Copyright 2022</h5>
+                    <br>
+                    <h5>Abstract Studio Design inc</h5>
+                    <h5>All rights reserved</h5>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
